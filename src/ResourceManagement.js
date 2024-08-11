@@ -12,18 +12,76 @@ const ResourceManagement = () => {
       {
         label: "Resource Allocation",
         data: [40, 35, 25],
-        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        backgroundColor: ["#FF5722", "#333333", "#E0E0E0"], 
+        hoverBackgroundColor: ["#FF5722", "#333333", "#E0E0E0"],
       },
     ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top', 
+        labels: {
+          color: '#FBFBFB', 
+          font: {
+            size: 14 
+          }
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: (tooltipItem) => {
+            return `${tooltipItem.label}: ${tooltipItem.raw}%`; 
+          }
+        }
+      }
+    },
+    maintainAspectRatio: false,
   };
 
   return (
     <section className="resource-management">
       <h2>Resource Management</h2>
-      <p>Overview of resource allocation will be displayed here.</p>
+      <p className="overview-text">
+        This section provides an overview of how resources are allocated in the project. 
+        The Pie chart shows the proportion of each resource type.
+      </p>
       <div className="chart-container">
-        <Pie data={data} />
+        <h3>Resource Allocation</h3>
+        <div className="chart-wrapper">
+          <Pie data={data} options={options} />
+        </div>
+      </div>
+      <div className="resource-details">
+        <h3>Resource Details</h3>
+        <table className="resource-table">
+          <thead>
+            <tr>
+              <th>Resource Type</th>
+              <th>Allocated (%)</th>
+              <th>Cost (₦)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Labor</td>
+              <td>40%</td>
+              <td>5000</td>
+            </tr>
+            <tr>
+              <td>Materials</td>
+              <td>35%</td>
+              <td>3000</td>
+            </tr>
+            <tr>
+              <td>Equipment</td>
+              <td>25%</td>
+              <td>2000</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   );
