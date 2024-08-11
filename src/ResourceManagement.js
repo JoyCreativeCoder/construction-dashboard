@@ -12,8 +12,8 @@ const ResourceManagement = () => {
       {
         label: "Resource Allocation",
         data: [40, 35, 25],
-        backgroundColor: ["#FF5722", "#333333", "#E0E0E0"], 
-        hoverBackgroundColor: ["#FF5722", "#333333", "#E0E0E0"],
+        backgroundColor: ["#8BC34A", "#FF5722", "#FFC107"], // Updated colors for each segment
+        hoverBackgroundColor: ["#7CB342", "#E64A19", "#FFA000"], // Darker shades on hover
       },
     ],
   };
@@ -22,18 +22,18 @@ const ResourceManagement = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top', 
+        position: 'top',
         labels: {
-          color: '#FBFBFB', 
+          color: '#FBFBFB', // Light text color for legend
           font: {
-            size: 14 
+            size: 14
           }
         }
       },
       tooltip: {
         callbacks: {
           label: (tooltipItem) => {
-            return `${tooltipItem.label}: ${tooltipItem.raw}%`; 
+            return `${tooltipItem.label}: ${tooltipItem.raw}%`;
           }
         }
       }

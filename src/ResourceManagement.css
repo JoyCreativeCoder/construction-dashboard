@@ -6,13 +6,13 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 1200px;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     color: #FBFBFB;
 }
 
 .resource-management h2 {
     font-size: 28px;
-    color: #FBFBFB;
+    color: #8BC34A; /* Light Green for heading */
     margin-bottom: 10px;
 }
 
@@ -23,17 +23,17 @@
 }
 
 .chart-container {
-    background-color: rgba(58, 58, 60, 0.8); 
+    background-color: rgba(58, 58, 60, 0.8);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
 }
 
 .chart-wrapper {
     position: relative;
-    width: 100%; 
-    height: 300px; 
+    width: 100%;
+    height: 300px;
 }
 
 .resource-details {
@@ -42,7 +42,7 @@
 
 .resource-details h3 {
     font-size: 22px;
-    color: #FBFBFB;
+    color: #FFC107; /* Amber for subheading */
     margin-bottom: 15px;
 }
 
@@ -59,7 +59,7 @@
 
 .resource-table th {
     background-color: rgba(58, 58, 60, 0.8);
-    color: #FBFBFB;
+    color: #8BC34A; /* Light Green for table headers */
 }
 
 .resource-table td {
