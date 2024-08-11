@@ -1,0 +1,30 @@
+.resource-management {
+    background-color: #2C2C2E ;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+  
+  .resource-management h2 {
+    font-size: 24px;
+    color: #FBFBFB;
+  }
+  
+  .resource-management p {
+    color: #E0E0E0 ;
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    background-color: #3A3A3C  ;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #FBFBFB;
+  }
+  

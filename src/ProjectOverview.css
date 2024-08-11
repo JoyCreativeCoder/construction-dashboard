@@ -1,0 +1,138 @@
+
+
+.project-overview {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2C2C2E;
+    width: 30%;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-header h2 {
+    font-size: 28px;
+    color: #FBFBFB;
+    margin-bottom: 8px;
+}
+
+.project-header .summary {
+    color: #E0E0E0;
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 0.3px solid #666666;
+}
+
+.status-section {
+    margin-top: 20px;
+}
+
+.status-section h3 {
+    font-size: 22px;
+    color: #FBFBFB;
+    margin-bottom: 15px;
+}
+
+.status-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.status-item .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #3A3A3C; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.status-item .icon svg {
+    fill: #FF5722;
+}
+
+.material-symbols-outlined {
+    color: #E0E0E0;
+    font-weight: 300;
+}
+
+.status-item .status-text {
+    flex: 1;
+    color: #E0E0E0;
+}
+
+.status-text p {
+    color: #FF5722;
+    font-weight: bold; 
+}
+
+.progress-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+}
+
+.progress-circle .circle-background {
+    fill: none;
+    stroke: #4A4A4A;
+    stroke-width: 10;
+}
+
+.progress-circle .circle-progress {
+    fill: none;
+    stroke: #FF5722;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-circle .progress-text {
+    position: absolute;
+    font-size: 24px;
+    color: #FBFBFB;
+    font-weight: bold;
+}
+
+.milestones {
+    margin-top: 20px;
+}
+
+.milestones h3 {
+    font-size: 22px;
+    color: #FBFBFB;
+    margin-bottom: 15px;
+}
+
+.milestones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.milestones li {
+    font-size: 16px;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+    border-top: 1px solid #3A3A3C; 
+    padding-top: 10px;
+}
+
+.label {
+    color: #B0B0B0;
+    font-size: 14px;
+}
