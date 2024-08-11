@@ -1,34 +1,35 @@
 .project-overview {
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(44, 44, 46, 0.8); /* Dark Gray with transparency */
+    background-color: rgba(44, 44, 46, 0.8);
     width: 30%;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .project-header h2 {
-    font-size: 28px;
-    color: #F4EEE0; /* Light Cream */
-    margin-bottom: 8px;
+    font-size: 1.75rem;
+    color: #8bc34a;
+    margin-bottom: 0.5rem;
 }
 
 .project-header .summary {
-    color: #BFCC94; /* Olive Green */
-    font-size: 16px;
+    color: #E0E0E0;
+    font-size: 1rem;
     line-height: 1.5;
-    border-bottom: 0.3px solid #666666; /* Gray */
+    border-bottom: 0.025rem solid #666666;
+    padding-bottom: 0.5rem;
 }
 
 .status-section {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .status-section h3 {
-    font-size: 22px;
-    color: #F4EEE0; /* Light Cream */
-    margin-bottom: 15px;
+    font-size: 1.375rem;
+    color: #FBFBFB;
+    margin-bottom: 0.9375rem;
 }
 
 .status-details {
@@ -39,44 +40,44 @@
 .status-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 1.25rem; 
 }
 
 .status-item .icon {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background-color: #3A3A3C; /* Darker Gray */
+    background-color: #3A3A3C; 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 0.9375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 .status-item .icon svg {
-    fill: #B35C1E; /* Dark Orange */
+    fill: #FFc107;
 }
 
 .material-symbols-outlined {
-    color: #F4EEE0; /* Light Cream */
+    color: #E0E0E0;
     font-weight: 300;
 }
 
 .status-item .status-text {
     flex: 1;
-    color: #BFCC94; /* Olive Green */
+    color: #E0E0E0;
 }
 
 .status-text p {
-    color: #B35C1E; /* Dark Orange */
+    color: #FF5722;
     font-weight: bold; 
 }
 
 .progress-circle {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,33 +89,33 @@
 
 .progress-circle .circle-background {
     fill: none;
-    stroke: #4A4A4A; /* Medium Gray */
-    stroke-width: 10;
+    stroke: #4A4A4A;
+    stroke-width: 0.625rem;
 }
 
 .progress-circle .circle-progress {
     fill: none;
-    stroke: #B35C1E; /* Dark Orange */
-    stroke-width: 10;
+    stroke: #FF5722;
+    stroke-width: 0.625rem;
     stroke-linecap: round;
     transition: stroke-dashoffset 0.3s ease;
 }
 
 .progress-circle .progress-text {
     position: absolute;
-    font-size: 24px;
-    color: #F4EEE0; /* Light Cream */
+    font-size: 1.5rem;
+    color: #FBFBFB;
     font-weight: bold;
 }
 
 .milestones {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .milestones h3 {
-    font-size: 22px;
-    color: #F4EEE0; /* Light Cream */
-    margin-bottom: 15px;
+    font-size: 1.375rem;
+    color: #FFC107;
+    margin-bottom: 0.9375rem;
 }
 
 .milestones ul {
@@ -123,14 +124,100 @@
 }
 
 .milestones li {
-    font-size: 16px;
-    color: #BFCC94; /* Olive Green */
-    margin-bottom: 10px;
-    border-top: 1px solid #3A3A3C; /* Darker Gray */
-    padding-top: 10px;
+    font-size: 1rem;
+    color: #E0E0E0;
+    margin-bottom: 0.625rem;
+    border-top: 1px solid #3A3A3C; 
+    padding-top: 0.625rem;
 }
 
 .label {
-    color: #B0B0B0; /* Light Gray */
-    font-size: 14px;
+    color: #B0B0B0;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .project-overview {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .project-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-header .summary {
+        font-size: 0.875rem;
+        border-bottom: 0.025rem solid #666666;
+    }
+
+    .status-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .status-item .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.75rem;
+    }
+
+    .progress-circle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .progress-circle .progress-text {
+        font-size: 1.25rem;
+    }
+
+    .milestones h3 {
+        font-size: 1.25rem;
+    }
+
+    .milestones li {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-overview {
+        padding: 0.75rem;
+        margin: 0.75rem 0;
+    }
+
+    .project-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-header .summary {
+        font-size: 0.75rem;
+    }
+
+    .status-section h3 {
+        font-size: 1.125rem;
+    }
+
+    .status-item .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .progress-circle {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .progress-circle .progress-text {
+        font-size: 1rem;
+    }
+
+    .milestones h3 {
+        font-size: 1.125rem;
+    }
+
+    .milestones li {
+        font-size: 0.75rem;
+    }
 }

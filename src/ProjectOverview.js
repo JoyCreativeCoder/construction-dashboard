@@ -34,7 +34,7 @@ clock_loader_20
                     cx="50"
                     cy="50"
                     r="45"
-                    stroke="#FF5722"
+                    stroke="#8bc34a"
                     strokeWidth="10"
                     fill="none"
                     strokeDasharray="282.6"

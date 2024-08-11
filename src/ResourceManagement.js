@@ -12,8 +12,8 @@ const ResourceManagement = () => {
       {
         label: "Resource Allocation",
         data: [40, 35, 25],
-        backgroundColor: ["#8BC34A", "#FF5722", "#FFC107"], // Updated colors for each segment
-        hoverBackgroundColor: ["#7CB342", "#E64A19", "#FFA000"], // Darker shades on hover
+        backgroundColor: ["#8BC34A", "#FF5722", "#FFC107"],
+        hoverBackgroundColor: ["#7CB342", "#E64A19", "#FFA000"], 
       },
     ],
   };
@@ -24,7 +24,7 @@ const ResourceManagement = () => {
       legend: {
         position: 'top',
         labels: {
-          color: '#FBFBFB', // Light text color for legend
+          color: '#FBFBFB',
           font: {
             size: 14
           }

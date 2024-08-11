@@ -12,14 +12,15 @@ const BudgetTracking = () => {
       {
         label: 'Planned Spending',
         data: [5000, 3000, 2000],
-        backgroundColor: '#8BC34A', // Light Green color for Planned Spending
+        backgroundColor: '#8BC34A',
       },
       {
         label: 'Actual Spending',
         data: [4500, 3200, 2200],
-        backgroundColor: '#FF5722', // Deep Orange color for Actual Spending
+        backgroundColor: '#FF5722',
       },
     ],
+    maintainAspectRatio: false,
   };
 
   const options = {
@@ -28,26 +29,29 @@ const BudgetTracking = () => {
       legend: {
         position: 'top',
         labels: {
-          color: '#E0E0E0' // Light gray color for the legend text
+          color: '#E0E0E0'
         }
       },
       title: {
         display: true,
         text: 'Budget Overview',
-        color: '#E0E0E0', // Light gray color for the title text
+        color: '#E0E0E0',
       },
     },
     scales: {
       x: {
         ticks: {
-          color: '#E0E0E0' // Light gray color for x-axis labels
+          color: '#E0E0E0'
         },
       },
       y: {
         ticks: {
-          color: '#E0E0E0' // Light gray color for y-axis labels
+          color: '#E0E0E0'
         },
       },
+    },
+    animation: {
+      duration: 0 // Disable animation
     },
   };
 
