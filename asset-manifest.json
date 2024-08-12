@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JoyCreativeCoder/construction-dashboard.git/static/css/main.3e338ec7.css",
+    "main.js": "/JoyCreativeCoder/construction-dashboard.git/static/js/main.8af4cfaf.js",
+    "static/js/453.907394bb.chunk.js": "/JoyCreativeCoder/construction-dashboard.git/static/js/453.907394bb.chunk.js",
+    "index.html": "/JoyCreativeCoder/construction-dashboard.git/index.html",
+    "main.3e338ec7.css.map": "/JoyCreativeCoder/construction-dashboard.git/static/css/main.3e338ec7.css.map",
+    "main.8af4cfaf.js.map": "/JoyCreativeCoder/construction-dashboard.git/static/js/main.8af4cfaf.js.map",
+    "453.907394bb.chunk.js.map": "/JoyCreativeCoder/construction-dashboard.git/static/js/453.907394bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e338ec7.css",
+    "static/js/main.8af4cfaf.js"
+  ]
+}
