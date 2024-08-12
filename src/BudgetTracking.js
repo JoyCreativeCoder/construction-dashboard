@@ -51,7 +51,7 @@ const BudgetTracking = () => {
       },
     },
     animation: {
-      duration: 0 // Disable animation
+      duration: 0 
     },
   };
 
